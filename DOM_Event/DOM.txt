@@ -1,0 +1,5 @@
+¿Que es el DOM?
+
+El DOM (Document Object Model) es una interfaz de progamación para los documentos HTML. Proporciona una representación estructurada del documento y define de qué manera los programas peden acceder y modificar su estructura, estilo y contenido. El DOM reprenta al documento como un grupo de nodos y objetos con sus propiedades y metodso.
+
+(Mirar imagen de DOM estructura jerarquica)
