@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <script>
+        function modifyText(){
+            var t2 = document.getElementById('t2')
+            t2.firstChild.nodeValue = 'Tocado!';
+        }
+        function load(){
+            var el = document.getElementById('t2');
+            el.addEventListener('click', modifyText, false)
+        }
+        // Al cargar el documento, agregamos el EventListener()
+        document.addEventListener('click', load, false)
+    </script>
+</head>
+<body>
+    <p id = 't2'>¡Haz click aqui!</p>
+</body>
+</html>

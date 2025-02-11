@@ -1,0 +1,26 @@
+DOM | Eventos en JS
+
+Los "eventos" son acciones que realizan el usuario a las que podemos 'atender' desde JS e indicar qué función o bloque de código se debe ejecutar como respuesta. Estos eventos permiten interactuar con el usuaio, por ejemplo cuando hace click en un boton. Existen tres formas de definir eventos en nuestro codigo:
+
+1) A través de un "atributo" HTML, asociado al mismo una función = <tag onclick = "..">
+
+ejemplo: 
+    <button onclick = 'enviarMensaje()'>haz click</button>
+    <script>
+        const enviarMensaje = () => alert('Hola!')
+    </script>
+
+
+2) A través de una "propiedad" de JS, a la que asociamos la función = tag.onclick = ".."
+
+ejemplo:
+    <button>Haz click</button>
+    <script>
+        const button = document.querySelecto("button");
+        button.onclick = () => alert('Hola!')
+    </script>
+
+*** Más utilizado ***
+3) A través del método addEventListener(), que permite craer un "Atendedor" de eventos = tag.addEventListener("click", ...)
+
+////// EJEMPLO 4 /////////

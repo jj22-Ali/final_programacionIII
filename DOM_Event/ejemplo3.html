@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h2>Remplazar contendio de un elemento</h2>
+    <div></div>
+    <div class="info"></div>
+    <script>
+        const div1 = document.querySelector('div');
+        div1.textContent = 'Hola a todos'
+        const div2 = document.querySelector('.info');
+        div2.innerHTML = '<strong>Importantes</strong>'
+        const img = document.createElement('img');
+        img.src= 'https://imgs.search.brave.com/MgrQYfK1GHweRrENvGuXMcpCg83bGbG72QmGE5yx3ys/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy82/LzZhL0phdmFTY3Jp/cHQtbG9nby5wbmc';
+        img.alt = 'Logo JavaScript';
+        document.body.appendChild(img);
+    </script>
+</body>
+</html>

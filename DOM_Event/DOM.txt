@@ -6,7 +6,7 @@ El DOM (Document Object Model) es una interfaz de progamación para los document
 
 DOM | Manipulando la estructura
 
-El Document Object contiene los atributos y medotodos de la estructura que representa el documento. Js posee Model o Modelado (API) que permite su manipulación.
+El Document Object contiene los atributos y metodos de la estructura que representa el documento. Js posee Model o Modelado (API) que permite su manipulación.
 
 Por lo tanto DOM posee elementos y nodos. (mirar la grafica elementos_nodos)
 
@@ -54,7 +54,7 @@ Ejemplos:
 
 * const page = document.querySelector('#page') // <div id='page><div>
 
-const info = document.querySelector('.main .info') // <div class = 'info'></div> (devuele todas las clase info que se encuentre dentro de la clase .main)
+const info = document.querySelector('.main .info') // <div class = 'info'></div> (devuele  la clase info que se encuentre dentro de la clase .main)
 
 .querySelectorAll()
 
@@ -82,3 +82,37 @@ metodo: (Element) .createElement(tag, options) = Crea y devuelve el elemento HTM
 En el ejemplo 2 unas un .createElement() podemos crear un elemento HTML con .appendChild(), en una posición determina. El ejemplo crea un boton y lo coloca en el body
 
 --------------------------------------------------------
+
+
+DOM | Reemplzar contenido de un elemento
+
+.textContent y .innerHtml permiten recuperar o modificar el contenido de texto de un elemento, pero no son equivalentes.
+
+.textContent = Devuelve o asigna el texto del elemento. No entiende la sintaxis HTML.
+
+.innerHTML = Devuelve o asigna el contenido HTML del elemento.
+
+////// ejemplo 3 ///////
+
+-------------------------------------------------
+
+DOM | Insertar una imágen
+
+ejemplo:  mirar Ejemplo 3
+
+-------------------------------------------------
+
+DOM | API nativa de JavaScript
+
+Entre las herramintas que provee la API de JS se encuentran:
+
+* Buscar etiquetas = Metodos como .getElementById(), .querySelector(), etc.
+
+* Crear etiquetas = Métodos para crear elementos como .createElement(), etc.
+
+* Insertar etiquetas = Metodos para añadir elementos al DOM, como .appendChild();
+
+* Gestion de clases CSS = .classList() permite manipular clases CSS desde JS, para añadir, modificar o eliminar clases CSS de un elemento;
+
+* Navegar entre elementos = Métodos y propiedades para <<navegar>> a travéz de las jerarquía del DOM, por las estrcutura del documetno y la posicón de los elementos en la misma.
+
