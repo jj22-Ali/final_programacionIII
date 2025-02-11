@@ -3,3 +3,82 @@
 El DOM (Document Object Model) es una interfaz de progamación para los documentos HTML. Proporciona una representación estructurada del documento y define de qué manera los programas peden acceder y modificar su estructura, estilo y contenido. El DOM reprenta al documento como un grupo de nodos y objetos con sus propiedades y metodso.
 
 (Mirar imagen de DOM estructura jerarquica)
+
+DOM | Manipulando la estructura
+
+El Document Object contiene los atributos y medotodos de la estructura que representa el documento. Js posee Model o Modelado (API) que permite su manipulación.
+
+Por lo tanto DOM posee elementos y nodos. (mirar la grafica elementos_nodos)
+
+Por lo tanto...
+JavaScript accede al DOM usando el objetc document mediante sus atributos y metodos.
+
+ejemplo
+
+Tipo de dato            Tipo especifco      Etiqueta    descripcion
+
+(element) HTMLElment    HTMLDivElement      <div>       capa divisiora invisible en bloques
+
+-----------------------------------------------------------------------------------------------
+
+DOM | Modificar elementos | Método Tradicional
+
+document permite identificar elementos por sus atributos, por ejemplo, su "id" o "class". Devuelven  bien un elemento o un arreglo  con todos los que son de esa clase, o "null" en caso que no exista.
+
+Metodos de busqueda:
+--------------------
+* (ElEMENT) .getElementById(ID) = Busca el elemento html con id "ID", sino devuelve null.
+
+*(ARRAY) .getElementByClassName(class) = Busca el elemento con la clase "class", sino devuelve null.
+
+(Esto dos ultimos funcionan bajo la misma logica)
+*(ARRAY) .getElementByName
+*(ARRAY) .getElementByTagName(<div>) = busca .... sino null.
+
+NOTA: los metodos que comienzan con "get" devuelven un valor. Los que comienzan con "set" modifican o establecen un valor.
+
+innerHTML() (metodo)
+--------------------
+El método innerHTML() escribe código HTML en un elemento.
+
+/////////////// MIRAR EJEMPLO 1 //////////////////////
+
+DOM | Modificar elementos | Métodos modernos
+
+En los ultimoaños JS ha añidadio dos nuevo métodos búsqueda de elemento que son simples de usar, sobre todo si conocemos los selectores CSS. Son los metodos .querySelector() y .querySelectorAll();
+
+Ejemplos:
+
+.querySelector()
+--------------
+
+* const page = document.querySelector('#page') // <div id='page><div>
+
+const info = document.querySelector('.main .info') // <div class = 'info'></div> (devuele todas las clase info que se encuentre dentro de la clase .main)
+
+.querySelectorAll()
+
+//obtiene todos los elementos con clase 'info'
+const infos = document.querySelectorAll('.info');
+
+// Obtiene todos los elementos con atributos name="nickname"
+cons nicknames = document.querySelectorAll('[name = 'nickname']');
+
+// Obtiene todos los elementos <div> de la pagina HTML
+const divs = document.querySelectorAll('div');
+
+-----------------------------------------------------------------------
+
+DOM | Crear elementos HTML
+
+Existen métodos para cread diferentes elementos HTML o nodos, qe nos permiten agregar al documento estructuras dinámicas, mediante bucles o estructuras definidas.
+
+Veremos solo: element
+
+metodo: (Element) .createElement(tag, options) = Crea y devuelve el elemento HTML defino por tag.
+
+///////////////////////// ejemplo 2 /////////////////////////////////
+
+En el ejemplo 2 unas un .createElement() podemos crear un elemento HTML con .appendChild(), en una posición determina. El ejemplo crea un boton y lo coloca en el body
+
+--------------------------------------------------------
