@@ -10,6 +10,12 @@ Vue utiliza un DOM virtual, que es una réplica del DOM real en estructuras de d
 
 El termino renderización, se usa pra referirse el proceso de generar o representar algo en la pantalla. Los resultados de mostrar dicho modelo puden llamarse render. En una web el renderizado ocurre cuando se visita la página y su contenido se representa en la pantalla
 
+¿Que es la reactividad en vue?
+
+Reactividad es cuando la vista de la aplicacíon cambia cuando os valores reactivos dentro de esas cambian su valor'
+
+
+
 NOTAS: Conceptos Claves
 
 Data Binding. La función de data binding ayuda a manipular o asignar valores a atributos HTML, cambiar el estilo, asignar clases con la ayuda de la directiva de enlace llamada v-bind disponible en Vue
@@ -23,3 +29,47 @@ Templates: Vue.JS proporciona plantillas basadas en HTML que unen el DOM con los
 Directives: Vue.JS tiene directivas integradas como v-if, v-else, v-show, v-on, v-bind, y v-model, que se utilizan para realizar varias acciones en la interfaz.
 
 Watchers: Los Watchers se aplican a los datos que cambian. Por ejemplo, elementos de input en formularios. Aquí, no tenemos que agregar ningún evento adicional. Los Watcheers se encargan de manejar cualquier cambio de datos haciendo que el código sea simple y rápido.
+
+
+Propiedades Computadas
+
+Es importante saber que los campos computados no pueden recibir valores mediante parámetros desde fuera de la función. Si es necesario parar un valor, en lugar de un campo computado se debe crear un metodo
+
+Creción de Componentes
+
+Los componentes son una de las caractersticas importantes de Vue.js que ayudan a crear elementos personalizados, que se pueden reutilizar en HTML. El nombre asigando a las etiquetass ser remplazado por el codigo del "Templete" escrito en la creación del componentes.
+
+Watchers
+
+Un watcher (observador) en Vue es una característica especial que nos permite obasrvara algunos datos y realizar acciones especificas  cuando cambian.
+Por ejemplo, elementos input en formularios. Los watchers se encargan de manejar cualquier cambio de datos haciendo que el codigo esa simple y rapido.
+
+$refs
+
+Si neceetiamos acceder a elmentos del Dom, tenemos $refs, este es un objeto, dentro de el se van aa almacenar todos los elmentos del DOM que cuentan con el atributo ref. Entonces $res es una propiedad de la instancia. Se pueden tener varios elementos con el atributo "ref", siempre y cuando el valor de altributo sea diferente para cada elemento.
+
+
+(Parte ultra teoriaca)
+
+Patron MVC - Modelo - Vista - Controlador (Definición general)
+
+Es un paton de arquitectura de software, busca desacoplar al maximo la interfaz de usuario de la logica de aplicaión, creando 3 grupos M - V - C y descibre como se relacionan.
+
+(mirar ejemplo de imagen)
+
+MVC Y MVVM
+
+De manera simir al MVC, el MVVM o modelo-vista-modelo de vista es un patrón de arquitectura de software que se caracteriza por desacoplar lo máximo posible la interfaz del utario de la lógica de la aplicación.
+
+(mirar el ejemplo de imagen)
+
+Diferencias entre MVVM y MVC 
+
+MVVM realiza la sinconización automática de la vista y el modelo, es decir, cuando cambia el atributo del modelo, no necesitamos operar manualmente el elemento dom para cambiar la visualización de la vista, la capa de la vista cambiará automaáticamente
+
+Puntos Clave del patrón MVVM:
+
+1) El usuarrio interactúa con la vista.
+2) View y ViewModel tienen una ralación de uno a uno, lo que significa que una vista spñp se íede asignar a un ViewModel.
+3) View contiene una referncia a ViewModel, pero View no tiene información sobre el modelo.
+4) Existe una relación de enlace de datos bidireccional entre View y ViewModel.
