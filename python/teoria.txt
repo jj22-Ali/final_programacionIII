@@ -12,3 +12,40 @@ Clases | Método __del__()
 Los objetos se borran con del, o se eliminan al finalizar el programa
 
 (Mirar ejemplo de alumnos)
+
+
+Herencia
+
+La herencia es un mecanismo de la Programación Orientada a Objetos (POO) que permite crear clases nuevas a partir de clases preexistentes.
+
+Usando este concepto, las clases nuevas pueden tomar (heredar) atributos y métodos de clases anteriores. Incluso pueden modificarlos para modelar una nueva situación.
+
+La clase que aporta los métodos y atributos para heredar se la denomina clase base, superclase o clase padre, y a las que se construyen a partir de ella clases derivads, subclases o clases hijas.
+
+Herencia Simple 
+
+Tiene lugar cuando una clase derivada (subclase) hereda atributos y métodos de una única clase base(superclase)
+
+mirar Ejemplo {{Herencia simple}}
+
+Herencia Multiple
+
+La herencia múltiple ocurre cuanod una subclase deriva de dos o más clases base. 
+
+Clases Abstractas
+¿Qué son?
+Las clases abstractas son "moldes" que definen métodos y propiedades, pero no se pueden instanciar directamente. Solo se usan para crear subclases.
+
+Propósito principal:
+
+Evitar la duplicación de código al proporcionar atributos y métodos comunes a todas las subclases.
+
+Definir una interfaz común que las subclases deben seguir.
+
+Características clave:
+
+No se pueden instanciar: Solo sirven como base para otras clases.
+
+Métodos abstractos: Pueden tener métodos sin implementación (solo declarados), que deben ser implementados por las subclases.
+
+Obligatoriedad: Las subclases deben implementar todos los métodos abstractos para poder ser utilizadas.
