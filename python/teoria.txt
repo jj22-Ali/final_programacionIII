@@ -1,0 +1,14 @@
+Clases | Metodos __init__()
+
+__init__() permite que en el momento de la instancia se asignen a los valores a los atributos.
+
+Clases | __str__
+Para mostrar objetos, Python provee otro método especial, llamado __str__, que debe devolver una cadena de cararcteres con lo que queremos mostrar. Este método se invoca cada vez que se llama a la función str, por ejemplo, al imprimir el objeto.
+
+El metodo __str__ tiene un solo parámeto, self.
+
+Clases | Método __del__()
+
+Los objetos se borran con del, o se eliminan al finalizar el programa
+
+(Mirar ejemplo de alumnos)
