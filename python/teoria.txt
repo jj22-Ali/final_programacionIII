@@ -51,6 +51,11 @@ Métodos abstractos: Pueden tener métodos sin implementación (solo declarados)
 Obligatoriedad: Las subclases deben implementar todos los métodos abstractos para poder ser utilizadas.
 
 
+Polimorfismo
+
+El Polimorfismo es un de los pilares de POO. El termino tiene origen en las palabras poly(muchos) y morfo (formas), y aplicado al a programación hace referencia a que los objetos pueden tomar difrentes formas.
+Esto significa que objetos de difertens clases pueden ser accedios utlizando la misma interfaz, mostrando un compartaimento distinto(tomando diferentes formas) Según como sean accedidos.
+
 Colaboración de Clases
 
 se manifiesta como la posiblidad de utilizar en una clase objetos que son instancias de una clase diferente. Este mecanismo potencia el alacance que tiene la Programación Orientada a Objetos. Facilitando aún más el desarrollo de soluciones a problemas complejos sin necesidad de escribir codigo extenso o dificiles de leer.
@@ -67,10 +72,15 @@ Mediante la composición solo se puede utilizar la otra clase(la "que es parte d
 mirar ejemplo {{composición}}
 
 
+Encapsulación
 
+Si el nombre de un atributo está precedido por un guión bajo, significa que es un atirubto protegido.
 
+Encapsulación se refiere al ocultamiento de los atributos o metodos de una clae exterior para que no se puedan acceder ni modificarr desde fuera. Por defecto Pyton no oculta los atibutos y métodos de una clase al exterior
 
-Polimorfismo
+{{{{mirar ejemplo en Encapsulación}}}}
 
-El Polimorfismo es un de los pilares de POO. El termino tiene origen en las palabras poly(muchos) y morfo (formas), y aplicado al a programación hace referencia a que los objetos pueden tomar difrentes formas.
-Esto significa que objetos de difertens clases pueden ser accedios utlizando la misma interfaz, mostrando un compartaimento distinto(tomando diferentes formas) Según como sean accedidos.
+Un setter permite crear métodos que permiten modificar el valor de un atributo privado, se clacaran escribiendo ante del método un decorad con su nombre seguido de .setter
+un getter es un mecanismo que permite acceder a un método o traibuto privado. En python se clara creando un método con el decorador @property
+
+{{{Mirar en en ejemplo de Ecapsulaicón}}}
