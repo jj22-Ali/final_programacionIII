@@ -49,3 +49,22 @@ No se pueden instanciar: Solo sirven como base para otras clases.
 Métodos abstractos: Pueden tener métodos sin implementación (solo declarados), que deben ser implementados por las subclases.
 
 Obligatoriedad: Las subclases deben implementar todos los métodos abstractos para poder ser utilizadas.
+
+
+Colaboración de Clases
+
+se manifiesta como la posiblidad de utilizar en una clase objetos que son instancias de una clase diferente. Este mecanismo potencia el alacance que tiene la Programación Orientada a Objetos. Facilitando aún más el desarrollo de soluciones a problemas complejos sin necesidad de escribir codigo extenso o dificiles de leer.
+
+Atributos de clase
+Los atributos de clase a diferecnai de los atributos de instancia, son compartidos por todos los objetode dicha clase. Los atriubtos de clase se definen dentro de la case pero no fuera de sus métodos.
+
+Composición
+
+La composición es uno de los conceptos fundamentales de la POO. Tiene lugar cuando una clase (clase "que tiene") hace referencia a uno o más objetos de otras clases (clases "que son parte de"), como una variable de instancia.
+
+Mediante la composición solo se puede utilizar la otra clase(la "que es parte de")
+
+mirar ejemplo {{composición}}
+
+
+
