@@ -49,3 +49,8 @@ No se pueden instanciar: Solo sirven como base para otras clases.
 Métodos abstractos: Pueden tener métodos sin implementación (solo declarados), que deben ser implementados por las subclases.
 
 Obligatoriedad: Las subclases deben implementar todos los métodos abstractos para poder ser utilizadas.
+
+Polimorfismo
+
+El Polimorfismo es un de los pilares de POO. El termino tiene origen en las palabras poly(muchos) y morfo (formas), y aplicado al a programación hace referencia a que los objetos pueden tomar difrentes formas.
+Esto significa que objetos de difertens clases pueden ser accedios utlizando la misma interfaz, mostrando un compartaimento distinto(tomando diferentes formas) Según como sean accedidos.
