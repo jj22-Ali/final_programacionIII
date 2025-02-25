@@ -1,3 +1,31 @@
+JSON
+(JavaScript Object Notation):
+Un formato de texto ligero para intercambiar datos
+
+JSON.stringify() y JSON.parse()
+
+* Podemos convertir datos almacenados en un objeto JS al formato JSON usarndo JSON.stringify()
+
+* Si los datos están almacenados en JSON los podemos convertir a un objeto JS usando JSON.parse()
+
+localstorage y webstorage
+
+LocalStorage:
+Almacena datos en el navegador sin fecha de expiración.
+
+Ejemplo: localStorage.setItem("nombre", "Juan").
+
+SessionStorage:
+Almacena datos en el navegador solo durante la sesión (se borra al cerrar la pestaña).
+
+Ejemplo: sessionStorage.setItem("tema", "oscuro").
+
+Diferencia:
+LocalStorage: Persiste.
+
+SessionStorage: Temporal.
+
+
 Definición Vue:
 
 Vue.js es un framework progresivo de JavaScript de código abierto, creado por Evan You en 2014. Se centra en la capa de visualización y facilita el desarrollo de interfaces web interactivas, permitiendo una fácil integración con otras librerías o proyectos front-end.
@@ -73,3 +101,65 @@ Puntos Clave del patrón MVVM:
 2) View y ViewModel tienen una ralación de uno a uno, lo que significa que una vista spñp se íede asignar a un ViewModel.
 3) View contiene una referncia a ViewModel, pero View no tiene información sobre el modelo.
 4) Existe una relación de enlace de datos bidireccional entre View y ViewModel.
+
+
+
+
+SPA
+
+MPA (Multi-Page Application):
+Qué es: Una aplicación web tradicional con múltiples páginas HTML.
+
+Cómo funciona: Cada vez que haces clic en un enlace o botón, el navegador recarga toda la página.
+
+Ejemplo: Blogs, sitios de noticias, tiendas online antiguas.
+
+Ventaja: Simple y compatible con todo.
+
+Desventaja: Más lento porque recarga la página completa.
+
+SPA (Single-Page Application):
+Qué es: Una aplicación web moderna con una sola página HTML.
+
+Cómo funciona: Solo se carga la página una vez, y luego se actualiza solo el contenido necesario (sin recargar toda la página).
+
+Ejemplo: Gmail, Google Maps, aplicaciones como React o Angular.
+
+Ventaja: Más rápido y fluido.
+
+Desventaja: Más complejo de desarrollar.
+
+Diferencia clave:
+MPA: Recarga toda la página.
+
+SPA: Solo actualiza lo necesario, sin recargar.
+
+
+Asincronia
+----------
+
+Mensaje HTTP = son los medios por los cuales se intercambian datos entre servidores y clientes, existe dos tipos.
+
+Peticiones HTTP : Es como suele denominarse a laacción por parte del navegador de solicitar a un servidor web un documento o archivo, para finalmente mostrarlo en la pagina
+
+Metodos HTTP
+GET 
+POST
+PUT = utilizado para actualizar por completo un registro existente(simil update)
+PATCH = similar el PUT, pero se utiliza cuando es necesario actualizar solo un fragmento de lregistro y no en su totalidad (simil a UPDATE)
+DELETE
+HEAD = Obtener información de un determiando recurso sin recurso sin retornnar el registro
+
+
+Respuesta  de la  peticion HTTP
+
+Cuando nuestro API recie esta peteción, la procesa y luego retorna una respuesta, llamada respuesta HTTP
+
+Asincronía en JavaScript:
+Es la capacidad de ejecutar tareas sin bloquear el flujo del programa. En lugar de esperar a que una tarea termine antes de pasar a la siguiente, JavaScript sigue ejecutando otras cosas y "vuelve" cuando la tarea asíncrona está lista.
+
+Fetch
+
+La API fetch. propociona una interfaz javaScript para acceder y manipular pardes del canal HTTP, tales como petecinioes y respuestas.
+
+fetch() promete una respuesta, que pude eventualmetne cumplir, y coloca el recruso solicidtado en respuesta, que puede eventualmente cumplir, y coloca el rescruso solicitado en response, o puede fallar, en cuyo caso provee un mecanismo para manejar error
