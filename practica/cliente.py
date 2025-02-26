@@ -15,53 +15,55 @@ depositar(moonto): Incrementa el saldo en la cantidad especificada.
 retirar(monto): Decrementa el saldo asegurandse de que no sea negativo. Si el monto a retir es mayor qeu el saldo, muestre un mensaje de error
 """
 
-
 class CuentaBancaria:
 
     def __init__(self, titular, saldo):
-        self.__titular = titular  # Atributo privado
-        self.__saldo = saldo       # Atributo privado
+        self.__titular = titular
+        self.__saldo = saldo
 
     @property
     def titular(self):
-        return self.__titular  # Acceder al atributo privado
+        return self.__titular
 
     @titular.setter
     def titular(self, titular):
-        self.__titular = titular  # Modificar el atributo privado
+        self.__titular = titular
 
+    
     @property
     def saldo(self):
-        return self.__saldo  # Acceder al atributo privado
+        return self.__saldo
 
     @saldo.setter
     def saldo(self, saldo):
-        self.__saldo = saldo  # Modificar el atributo privado
+        self.__saldo = saldo
 
     def consultarSaldo(self):
-        return self.__saldo
-    
+        return print(f'El saldo actual de tu cuenta es {self.__saldo}')
+
     def depositar(self, monto):
         if monto > 0:
             self.__saldo += monto
-            print(f'Depositar de exitoso, saldo actual: ${self.__saldo}')
+            print(f'Doposito Exitoso. Su saldo actual es {self.__saldo}')
         else:
-            print('Debe ingresar un monto mayor que cero')
+            print('Debes ingresar un monto mayor a 0')
 
-    def retirar(self, sacar):
-        if sacar > 0:
-            if self.__saldo > sacar:
-                self.__saldo -= sacar
-                print(f'Retiro de exitoso, saldo actual: ${self.__saldo}')
+    def retirar(self, monto):
+        if monto > 0:
+            if self.__saldo > monto:
+                self.__saldo -= monto
+                print(f'El retiro de {monto} es Exitoso!')
+                print(f'Saldo actual {self.__saldo}')
             else:
-                print('No puede sacar mas de lo que tiene')
+                print('No puedes retirar mas saldo de el que tiene')
         else:
-            print('El monto debe ser mayor a 0')
-# Crear una instancia de CuentaBancaria
-cliente = CuentaBancaria('Juan', 10000)
+            print('Debe ingresar un monto mayor que 0')
 
 
-print(cliente.consultarSaldo())
+cliente1 = CuentaBancaria('Juan', 10000)
 
-cliente.depositar(4000)
-cliente.retirar(2000)
+cliente1.consultarSaldo()
+
+cliente1.depositar(20000)
+
+cliente1.retirar(5000)
