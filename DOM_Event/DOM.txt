@@ -116,3 +116,4 @@ Entre las herramintas que provee la API de JS se encuentran:
 
 * Navegar entre elementos = Métodos y propiedades para <<navegar>> a travéz de las jerarquía del DOM, por las estrcutura del documetno y la posicón de los elementos en la misma.
 
+2

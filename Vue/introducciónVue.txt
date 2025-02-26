@@ -42,8 +42,6 @@ El termino renderización, se usa pra referirse el proceso de generar o represen
 
 Reactividad es cuando la vista de la aplicacíon cambia cuando os valores reactivos dentro de esas cambian su valor'
 
-
-
 NOTAS: Conceptos Claves
 
 Data Binding. La función de data binding ayuda a manipular o asignar valores a atributos HTML, cambiar el estilo, asignar clases con la ayuda de la directiva de enlace llamada v-bind disponible en Vue
